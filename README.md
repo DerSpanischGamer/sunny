@@ -1,6 +1,6 @@
 # sunny
 
-> idk my teacher told me to make a web page
+Le meilleur site du monde fait par Rob et Nicacaly.
 
 ## Build Setup
 
