@@ -88,7 +88,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Site magnifique fait par moi :D'
+      msg: 'You need him'
     }
   }
 }
