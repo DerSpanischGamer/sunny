@@ -1,14 +1,15 @@
 <template>
   <div id="app">
-	<ul>
-		<li><a href="#/">Home</a></li>
-		<li><a href="#/voitures">Voitures</a></li>
-		<li><a href="#/contact">Contact</a></li>
-		<li><a href="#/about">About</a></li>
-	</ul>
-	<img src="./assets/logo.gif">
-    <img src="./assets/logo.png">
-	<img src="./assets/tenor.gif">
+	<v-toolbar>
+		<v-toolbar-side-icon></v-toolbar-side-icon>
+		<v-toolbar-title>Title</v-toolbar-title>
+		<v-spacer></v-spacer>
+		<v-toolbar-items class="hidden-sm-and-down">
+			<v-btn flat>Link One</v-btn>
+			<v-btn flat>Link Two</v-btn>
+			<v-btn flat>Link Three</v-btn>
+		</v-toolbar-items>
+	</v-toolbar>
     <router-view/>
   </div>
 </template>
