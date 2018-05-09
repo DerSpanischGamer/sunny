@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-<<<<<<< HEAD
     <v-toolbar>
       <v-toolbar-title>Sunny</v-toolbar-title>
       <v-spacer></v-spacer>
@@ -10,18 +9,6 @@
         <v-btn flat>idk</v-btn>
       </v-toolbar-items>
     </v-toolbar>
-=======
-	<v-toolbar>
-		<v-toolbar-side-icon></v-toolbar-side-icon>
-		<v-toolbar-title>Title</v-toolbar-title>
-		<v-spacer></v-spacer>
-		<v-toolbar-items class="hidden-sm-and-down">
-			<v-btn flat>Link One</v-btn>
-			<v-btn flat>Link Two</v-btn>
-			<v-btn flat>Link Three</v-btn>
-		</v-toolbar-items>
-	</v-toolbar>
->>>>>>> dd622920f759568fa0407b0eac2477f81da1a847
     <router-view/>
   </div>
 </template>
