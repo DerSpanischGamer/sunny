@@ -5,7 +5,7 @@
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn flat>Voitures</v-btn>
-        <router-link to="/contact"><v-btn flat>Contact</v-btn></router-link>
+        <v-btn flat><router-link to="/contact">Contact</router-link></v-btn>
         <v-btn flat>idk</v-btn>
       </v-toolbar-items>
     </v-toolbar>
