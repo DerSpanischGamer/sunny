@@ -4,9 +4,9 @@
       <v-toolbar-title>Sunny</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn flat>Voitures</v-btn>
-        <v-btn flat><router-link to="/contact">Contact</router-link></v-btn>
-        <v-btn flat>idk</v-btn>
+        <v-btn flat to="/voitures">Voitures</v-btn>
+        <v-btn flat to="/contact">Contact</v-btn>
+        <v-btn flat to="/idk">idk</v-btn>
       </v-toolbar-items>
     </v-toolbar>
     <router-view/>
