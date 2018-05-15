@@ -23,7 +23,7 @@ export default new Router({
       path: '/voitures',
       name: 'voitures',
       component: voitures
-    }
+    },
     {
       path: '/produit&:id',
       name: 'produit',
