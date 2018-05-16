@@ -1,13 +1,15 @@
 <template>
   <div id="app">
-    <v-toolbar color="pink">
-      <v-toolbar-side-icon></v-toolbar-side-icon>
-      <v-toolbar-title class="white--text">All cars</v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn icon>
-        <v-icon>search</v-icon>
-      </v-btn>
-    </v-toolbar>
+      <v-toolbar>
+        <v-toolbar-title>Sunny</v-toolbar-title>
+        <v-spacer></v-spacer>
+        <v-toolbar-items class="hidden-sm-and-down">
+          <v-btn flat>Voitures</v-btn>
+          <router-link to="/contact"><v-btn flat>Contact</v-btn></router-link>
+          <v-btn flat>idk</v-btn>
+        </v-toolbar-items>
+      </v-toolbar>
+      <router-view/>
     <v-card>
       <v-container
         fluid
