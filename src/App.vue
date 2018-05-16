@@ -1,15 +1,85 @@
 <template>
   <div id="app">
-    <v-toolbar>
-      <v-toolbar-title>Sunny</v-toolbar-title>
+    <v-toolbar color="pink">
+      <v-toolbar-side-icon></v-toolbar-side-icon>
+      <v-toolbar-title class="white--text">All cars</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn flat>Voitures</v-btn>
-        <router-link to="/contact"><v-btn flat>Contact</v-btn></router-link>
-        <v-btn flat>idk</v-btn>
-      </v-toolbar-items>
+      <v-btn icon>
+        <v-icon>search</v-icon>
+      </v-btn>
     </v-toolbar>
-    <router-view/>
+    <v-card>
+      <v-container
+        fluid
+        style="min-height: 0;"
+        grid-list-lg
+      >
+        <v-layout row wrap>
+          <v-flex xs12>
+            <v-card color="blue-grey darken-2" class="white--text">
+              <v-card-title primary-title>
+                <div class="headline">Chevrolet</div>
+                <div>Regarder tous les modèles disponibles.</div>
+              </v-card-title>
+              <v-card-actions>
+                <v-btn flat dark>Plus d'infos</v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-flex>
+          <v-flex xs12>
+            <v-card color="cyan darken-2" class="white--text">
+              <v-container fluid grid-list-lg>
+                <v-layout row>
+                  <v-flex xs7>
+                    <div>
+                      <div class="headline">Ferrari</div>
+                      <div>wtf</div>
+                    </div>
+                  </v-card-title>
+                  <v-card-actions>
+                    <v-btn flat dark>Plus d'infos</v-btn>
+                  </v-card-actions>
+                  </v-flex>
+                  <v-flex xs5>
+                    <v-card-media
+                      src="/src/assets/chevolet.jpg"
+                      height="125px"
+                      contain
+                    ></v-card-media>
+                  </v-flex>
+                </v-layout>
+              </v-container>
+            </v-card>
+          </v-flex>
+          <v-flex xs12>
+            <v-card color="purple" class="white--text">
+              <v-container fluid grid-list-lg>
+                <v-layout row>
+                  <v-flex xs7>
+                    <div>
+                      <div class="headline">Ford</div>
+                      <div>Modèles classiques</div>
+                    </div>
+                  </v-card-title>
+                  <v-card-actions>
+                    <v-btn flat dark>Plus d'infos</v-btn>
+                  </v-card-actions>
+                  </v-flex>
+                  <v-flex xs5>
+                    <v-card-media
+                      src="/static/doc-images/cards/halcyon.png"
+                      height="125px"
+                      contain
+                    ></v-card-media>
+                  </v-flex>
+                </v-layout>
+              </v-container>
+            </v-card>
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </v-card>
+  </div>
   </div>
 </template>
 
