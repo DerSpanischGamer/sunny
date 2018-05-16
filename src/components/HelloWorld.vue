@@ -2,6 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <router-link to="/contact">Contact</router-link>
+    <router-link :to="{ name: 'produit', params: { id: 1234 } }">Test</router-link>
   </div>
 </template>
 
