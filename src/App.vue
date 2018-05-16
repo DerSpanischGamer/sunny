@@ -14,6 +14,9 @@
 </template>
 
 <script>
+
+var voit = ['Ford', 'Volvo', 'Seat']
+
 export default {
   name: 'App'
 }

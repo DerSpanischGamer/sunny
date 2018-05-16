@@ -2,7 +2,9 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <router-link to="/contact">Contact</router-link>
-    <router-link :to="{ name: 'produit', params: { id: 1234 } }">Test</router-link>
+    <router-link :to="{ name: 'produit', params: { id: 0 } }">Ford</router-link>
+    <router-link :to="{ name: 'produit', params: { id: 1 } }">Volvo</router-link>
+    <router-link :to="{ name: 'produit', params: { id: 2 } }">Seat</router-link>
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
-  <div class="hello">
-    <h1> Ta voiture a l'id: {{ id }}</h1>
+  <div class="produit">
+    <h1> La voiture numéro {{ id }} es: {{ msg }}</h1>
     <router-link to="/">Home</router-link>
   </div>
 </template>
@@ -13,11 +13,12 @@ export default {
   data () {
     return {
       id: 0,
-      msg: 'Hey Nic Raboy'
+      msg: ''
     }
   },
   created () {
     this.id = this.$route.params.id
+    this.msg = voit[this.id]
   },
   methods: {
     navigate () {

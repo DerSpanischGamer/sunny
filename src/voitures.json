@@ -1,0 +1,16 @@
+[{
+  "id": 0,
+  "nom": "",
+  "description": "Penddreth",
+  "marque": "Ford"
+}, {
+  "id": 1,
+  "nom": "Volvo",
+  "description": "Frediani",
+  "marque": "Volvo"
+}, {
+  "id": 2,
+  "nom": "Seat",
+  "description": "Bea",
+  "marque": "Seat"
+}]

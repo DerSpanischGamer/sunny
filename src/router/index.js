@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import contact from '@/components/contact'
 import voitures from '@/components/voitures'
 import produit from '@/components/produit'
+import idk from '@/components/idk'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/produit&:id',
       name: 'produit',
       component: produit
+    },
+    {
+      path: 'idk',
+      name: 'idk',
+      component: idk
     }
   ]
 })
