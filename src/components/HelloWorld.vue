@@ -2,9 +2,9 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <router-link to="/contact">Contact</router-link>
-    <router-link :to="{ name: 'produit', params: { id: 0 } }">Ford</router-link>
-    <router-link :to="{ name: 'produit', params: { id: 1 } }">Volvo</router-link>
-    <router-link :to="{ name: 'produit', params: { id: 2 } }">Seat</router-link>
+    <router-link :to="{ name: 'produit', params: { id: 0 } }">Seat</router-link>
+    <router-link :to="{ name: 'produit', params: { id: 1 } }">Ford</router-link>
+    <router-link :to="{ name: 'produit', params: { id: 2 } }">Volvo</router-link>
   </div>
 </template>
 
@@ -19,7 +19,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1, h2 {
   font-weight: normal;

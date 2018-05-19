@@ -1,11 +1,6 @@
 <template>
-  <div class="produit">
-    <h1> Cette voiture est un {{ marque }} {{ nom }} {{ description }}</h1>
-    <img :src="image" height="400">
-    <br>
-    <v-btn flat>henlo</v-btn>
-    <br>
-    <h2>Ici il faudra changer ça pour un v-card</h2>
+  <div class="contact">
+    <h1>heheh</h1>
     <router-link to="/">Home</router-link>
   </div>
 </template>
@@ -15,7 +10,7 @@ import router from '../router'
 import json from '../voitures.json'
 
 export default {
-  name: 'produit',
+  name: 'acheter',
   data () {
     return {
       id: -1,
