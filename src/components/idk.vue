@@ -1,7 +1,7 @@
 <template>
   <div class="idk">
     <img src="../assets/tenor.gif" alt="Mountains View">
-    <router-link to="/">Home</router-link>
+    <router-link to="/">Click for hot stuff</router-link>
   </div>
 </template>
 

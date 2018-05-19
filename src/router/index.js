@@ -31,7 +31,7 @@ export default new Router({
       component: produit
     },
     {
-      path: 'idk',
+      path: '/idk',
       name: 'idk',
       component: idk
     }
