@@ -2,7 +2,7 @@
   <div class="produit">
     <h1> Cette voiture est un {{ marque }} {{ nom }} {{ description }}</h1>
     <br>
-    <v-avatar tile="false" size="400"><img :src="image"></v-avatar>
+    <img :src="image" height="400">
     <br>
     <h2>Ici il faudra changer ça pour un v-card</h2>
     <router-link to="/">Home</router-link>
