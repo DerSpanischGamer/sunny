@@ -1,4 +1,3 @@
-<!-- en template il y a la code en html -->
 <template>
   <div class="contact">
     <p>Bienvenue au Sunny.</p>
@@ -10,7 +9,6 @@
 <script>
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1{
   font-style: normal;

@@ -1,13 +1,24 @@
 <template>
   <div class="idk">
-    <img src="../assets/tenor.gif" alt="Mountains View">
+    <v-btn flat v-for="voiture in voitures" :key="voiture.id"> {{ voiture.nom }}</v-btn>
+    <br>
     <router-link to="/">Click for hot stuff</router-link>
   </div>
 </template>
 
 <script>
+import json from '../voitures.json'
+
+export default {
+  name: 'idk',
+  computed: {
+    voitures () {
+      let voitures = json
+      return voitures
+    }
+  }
+}
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 </style>

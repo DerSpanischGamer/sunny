@@ -5,6 +5,7 @@ import contact from '@/components/contact'
 import voitures from '@/components/voitures'
 import produit from '@/components/produit'
 import idk from '@/components/idk'
+import acheter from '@/components/acheter'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/idk',
       name: 'idk',
       component: idk
+    },
+    {
+      path: '/acheter&:id',
+      name: 'acheter',
+      component: acheter
     }
   ]
 })
