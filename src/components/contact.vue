@@ -2,7 +2,7 @@
 <template>
   <div class="contact">
     <p>Bienvenue au Sunny.</p>
-    <h1></br> Nous somme un groupe d'étudiants qui travaillent sur un projet noté! Notre but est de <br></h1>
+    <h1> Nous somme un groupe d'étudiants qui travaillent sur un projet noté! Notre but est de</h1>
     <router-link to="/">Home</router-link>
   </div>
 </template>

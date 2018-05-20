@@ -21,4 +21,12 @@
   "description": "Belle voiture bleu qui fonctionne bien dans tous les terrains.",
   "image": "https://assets.volvocars.com/es/~/media/shared-assets/master/images/pages/my19/xc90-my19/pdp-landning/vcc08413_4x3.jpg",
   "prix": "1"
+},
+{
+  "id": 3,
+  "marque": "Lancia",
+  "nom": "Libra",
+  "description": "Une chouette voiture blue familiare.",
+  "image": "http://aws-cf.caradisiac.com/prod/mesimages/355095/1000432.jpg",
+  "prix": "1"
 }]
