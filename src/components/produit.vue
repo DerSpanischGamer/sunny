@@ -3,7 +3,7 @@
     <h1> Cette voiture est un {{ marque }} {{ nom }} {{ description }}</h1>
     <img :src="image" height="400">
     <br>
-    <v-btn dark="true" to="/voitures">Retouner</v-btn>
+    <v-btn dark="true" :to="origine">Retouner</v-btn>
     <v-btn dark="true" :to="{ name: 'acheter', params: { id: id } }">Acheter</v-btn>
     <br>
     <h2>Ici il faudra changer ça pour un v-card</h2>
@@ -19,6 +19,7 @@ export default {
   data () {
     return {
       id: -1,
+      origine: '/idk',
       marque: 'marque',
       nom: 'nom',
       description: 'description',
@@ -27,6 +28,8 @@ export default {
   },
   created () {
     this.id = this.$route.params.id
+    this.origine = this.$route.params.origine
+
     this.marque = json[this.id].marque
     this.nom = json[this.id].nom
     this.description = json[this.id].description
