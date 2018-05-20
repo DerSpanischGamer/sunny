@@ -27,7 +27,7 @@ export default new Router({
       component: voitures
     },
     {
-      path: '/produit&:id',
+      path: '/produit&:id&:origine',
       name: 'produit',
       component: produit
     },

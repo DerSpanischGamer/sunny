@@ -11,7 +11,7 @@
             </div>
           </v-card-title>
           <v-card-actions>
-            <v-btn flat color="orange" :to="{ name: 'produit', params: { id: voiture.id } }">Regarder</v-btn>
+            <v-btn flat color="orange" :to="{ name: 'produit', params: { id: voiture.id, origine: '/voitures' } }">Regarder</v-btn>
             <v-btn flat color="orange" :to="{ name: 'acheter', params: { id: voiture.id } }">Acheter</v-btn>
           </v-card-actions>
         </v-card>
@@ -26,7 +26,7 @@
             </div>
           </v-card-title>
           <v-card-actions>
-            <v-btn flat color="orange" :to="{ name: 'produit', params: { id: voiture.id } }">Regarder</v-btn>
+            <v-btn flat color="orange" :to="{ name: 'produit', params: { id: voiture.id, origine: '/voitures' } }">Regarder</v-btn>
             <v-btn flat color="orange" :to="{ name: 'acheter', params: { id: voiture.id } }">Acheter</v-btn>
           </v-card-actions>
         </v-card>
