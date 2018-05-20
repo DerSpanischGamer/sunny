@@ -1,10 +1,18 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <router-link to="/contact">Contact</router-link>
-    <router-link :to="{ name: 'produit', params: { id: 0 } }">Seat</router-link>
-    <router-link :to="{ name: 'produit', params: { id: 1 } }">Ford</router-link>
-    <router-link :to="{ name: 'produit', params: { id: 2 } }">Volvo</router-link>
+    <router-link to="/contact">
+      <v-btn color="blue-grey lighten-4">contact</v-btn>
+    </router-link>
+    <router-link :to="{ name: 'produit', params: { id: 0 } }">
+      <v-btn color="blue-grey lighten-4">seat</v-btn>
+</router-link>
+    <router-link :to="{ name: 'produit', params: { id: 1 } }">
+        <v-btn color="blue-grey lighten-4">ford</v-btn>
+</router-link>
+    <router-link :to="{ name: 'produit', params: { id: 2 } }">
+      <v-btn color="blue-grey lighten-4">volvo</v-btn>
+</router-link>
   </div>
 </template>
 
@@ -13,7 +21,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'You need him'
+      msg: 'Sunny'
     }
   }
 }
@@ -32,6 +40,6 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #42b983;
+  color: #0D47A1;
 }
 </style>
