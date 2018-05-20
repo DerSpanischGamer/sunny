@@ -2,12 +2,13 @@
 <template>
   <div class="contact">
     <p>Bienvenue au Sunny.</p>
-    <h1></br> Nous somme un groupe d'étudiants qui travaillent sur un projet noté! Notre but est de <br></h1>
+    <h1></br> Nous somme un groupe d'étudiants qui travaillent sur un projet noté! Notre but est de s'emmerder<br></h1>
     <router-link to="/">Home</router-link>
   </div>
 </template>
 
 <script>
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

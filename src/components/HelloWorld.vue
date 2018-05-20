@@ -13,6 +13,9 @@
     <router-link :to="{ name: 'produit', params: { id: 2 } }">
       <v-btn color="blue-grey lighten-4">volvo</v-btn>
 </router-link>
+<v-carousel>
+   <v-carousel-item v-for="(item,i) in items" :src="item.src" :key="i"></v-carousel-item>
+ </v-carousel>
   </div>
 </template>
 
@@ -21,7 +24,21 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Sunny'
+      msg: 'Sunny',
+      items: [
+          {
+            src: '/static/doc-images/carousel/squirrel.jpg'
+          },
+          {
+            src: '/static/doc-images/carousel/sky.jpg'
+          },
+          {
+            src: '/static/doc-images/carousel/bird.jpg'
+          },
+          {
+            src: '/static/doc-images/carousel/planet.jpg'
+          }
+        ]
     }
   }
 }
