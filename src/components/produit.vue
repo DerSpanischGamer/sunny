@@ -3,10 +3,10 @@
     <h1> Cette voiture est un {{ marque }} {{ nom }} {{ description }}</h1>
     <img :src="image" height="400">
     <br>
-    <v-btn flat>henlo</v-btn>
+    <v-btn dark="true" to="/voitures">Retouner</v-btn>
+    <v-btn dark="true" :to="{ name: 'acheter', params: { id: id } }">Acheter</v-btn>
     <br>
     <h2>Ici il faudra changer ça pour un v-card</h2>
-    <router-link to="/">Home</router-link>
   </div>
 </template>
 

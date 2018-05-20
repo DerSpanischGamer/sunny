@@ -1,7 +1,6 @@
 <template>
   <div class="idk">
-    <v-btn flat v-for="voiture in voitures" :key="voiture.id"> {{ voiture.nom }}</v-btn>
-    <br>
+    <img src="../assets/tenor.gif">
     <router-link to="/">Click for hot stuff</router-link>
   </div>
 </template>
@@ -11,10 +10,29 @@ import json from '../voitures.json'
 
 export default {
   name: 'idk',
+  data () {
+    return {
+      selectione: 'false',
+      marqueselec: 'Ford'
+    }
+  },
   computed: {
     voitures () {
       let voitures = json
       return voitures
+    },
+    marques () {
+      let marques = []
+
+      // corregir esto
+
+      for (let i = 0; i < json.length; i++) {
+        console.log(json[i].marque)
+        marques += json[i].marque
+      }
+      console.log(this.marques)
+
+      return marques
     }
   }
 }
