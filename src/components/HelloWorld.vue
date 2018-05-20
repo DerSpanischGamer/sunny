@@ -1,44 +1,21 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <router-link to="/contact">
-      <v-btn color="blue-grey lighten-4">contact</v-btn>
-    </router-link>
-    <router-link :to="{ name: 'produit', params: { id: 0 } }">
-      <v-btn color="blue-grey lighten-4">seat</v-btn>
-</router-link>
-    <router-link :to="{ name: 'produit', params: { id: 1 } }">
-        <v-btn color="blue-grey lighten-4">ford</v-btn>
-</router-link>
-    <router-link :to="{ name: 'produit', params: { id: 2 } }">
-      <v-btn color="blue-grey lighten-4">volvo</v-btn>
-</router-link>
-<v-carousel>
-   <v-carousel-item v-for="(item,i) in items" :src="item.src" :key="i"></v-carousel-item>
- </v-carousel>
+    <v-carousel>
+      <v-carousel-item v-for="(item,i) in items" :src="item.image" :key="i" :to="{ name: 'produit', params: { id: item.id } }"></v-carousel-item>
+    </v-carousel>
   </div>
 </template>
 
 <script>
+import json from '../voitures.json'
+
 export default {
   name: 'HelloWorld',
   data () {
     return {
       msg: 'Sunny',
-      items: [
-          {
-            src: '/static/doc-images/carousel/squirrel.jpg'
-          },
-          {
-            src: '/static/doc-images/carousel/sky.jpg'
-          },
-          {
-            src: '/static/doc-images/carousel/bird.jpg'
-          },
-          {
-            src: '/static/doc-images/carousel/planet.jpg'
-          }
-        ]
+      items: json
     }
   }
 }
