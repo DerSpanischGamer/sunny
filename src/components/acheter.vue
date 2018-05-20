@@ -1,7 +1,7 @@
 <template>
   <div class="contact">
-    <h1>heheh</h1>
-    <router-link to="/">Home</router-link>
+    <h1>Tu veux acheter un {{ marque }} {{ nom }} pour {{ prix }} francs.</h1>
+    <v-btn flat :to="{ name: 'produit', params: { id: id } }">Home</v-btn>
   </div>
 </template>
 
@@ -17,7 +17,8 @@ export default {
       marque: 'marque',
       nom: 'nom',
       description: 'description',
-      image: 'https://www.anipedia.net/imagenes/caracteristicas-generales-de-los-gatos.jpg'
+      image: 'https://www.anipedia.net/imagenes/caracteristicas-generales-de-los-gatos.jpg',
+      prix: '-1'
     }
   },
   created () {
@@ -25,7 +26,7 @@ export default {
     this.marque = json[this.id].marque
     this.nom = json[this.id].nom
     this.description = json[this.id].description
-    this.image = json[this.id].image
+    this.prix = json[this.id].prix
   },
   methods: {
     navigate () {

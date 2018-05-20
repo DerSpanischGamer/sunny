@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-    <v-toolbar>
+    <v-toolbar fixed scroll-off-screen>
       <v-toolbar-title>Sunny</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
+        <v-btn flat to="/">Home</v-btn>
         <v-btn flat to="/voitures">Voitures</v-btn>
         <v-btn flat to="/contact">Contact</v-btn>
-        <v-btn flat to="/idk">idk</v-btn>
       </v-toolbar-items>
     </v-toolbar>
     <router-view/>
