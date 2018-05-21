@@ -32,6 +32,7 @@
         </v-card>
       </v-flex>
     </layout>
+    
     <br>
     <router-link to="/">Click for hot stuff</router-link>
   </div>
