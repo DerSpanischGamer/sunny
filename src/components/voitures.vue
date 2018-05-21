@@ -32,7 +32,7 @@
         </v-card>
       </v-flex>
     </layout>
-    
+
     <br>
     <router-link to="/">Click for hot stuff</router-link>
   </div>
@@ -48,6 +48,9 @@ export default {
       selectione: 'false',
       marqueselec: 'Ford'
     }
+  },
+  created() {
+    console.log("log")
   },
   computed: {
     voitures () {
