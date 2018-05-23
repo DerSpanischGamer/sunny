@@ -4,7 +4,7 @@
   "nom": "Ibiza",
   "description": "LA MEILLEURE VOITURE DU MONDE.",
   "image": "https://a.ccdn.es/cnet/2018/02/14/34271069/134151098_g.jpg",
-  "prix": "1"
+  "prix": 1
 },
 {
   "id": 1,
@@ -12,7 +12,7 @@
   "nom": "Fiesta",
   "description": "Magnifique voiture noire, parfait pour aller shopping.",
   "image": "https://s1.cdn.autoevolution.com/images/gallery/FORDFiesta3Doors-2769_2.jpg",
-  "prix": "1"
+  "prix": 1
 },
 {
   "id": 2,
@@ -20,7 +20,7 @@
   "nom": "XC90",
   "description": "Belle voiture bleu qui fonctionne bien dans tous les terrains.",
   "image": "https://assets.volvocars.com/es/~/media/shared-assets/master/images/pages/my19/xc90-my19/pdp-landning/vcc08413_4x3.jpg",
-  "prix": "1"
+  "prix": 1
 },
 {
   "id": 3,
@@ -28,5 +28,37 @@
   "nom": "Libra",
   "description": "Une chouette voiture blue familiare.",
   "image": "http://aws-cf.caradisiac.com/prod/mesimages/355095/1000432.jpg",
-  "prix": "1"
+  "prix": 1
+},
+{
+  "id": 4,
+  "marque": "Dodge",
+  "nom": "Grand Caravan",
+  "description": "Minifourgonette choue",
+  "image": "http://storage.journaldemontreal.com/v1/dynamic_resize/sws_path/jdx-prod-images/22b5cbb3-3dbf-44a4-a959-d980ae380f95_ORIGINAL.jpg",
+  "prix": 1
+},
+{
+  "id": 5,
+  "marque": "Toyota",
+  "nom": "Corolla",
+  "description": "Toujours une bonne voiture I guess",
+  "image": "http://storage.journaldemontreal.com/v1/dynamic_resize/sws_path/jdx-prod-images/dc103a97-492c-4bb7-85af-f8cdcae9b565_ORIGINAL.jpg?quality=80&version=7&size=968x",
+  "prix": 1
+},
+{
+  "id": 6,
+  "marque": "Volkswagen",
+  "nom": "Beetle",
+  "description": "Giulia m'a obligé à la mettre.",
+  "image": "http://1.bp.blogspot.com/-kob4SCmlu2A/UAn9zuxYk0I/AAAAAAAADyg/--vXokLNPs8/s1600/beetle1.jpg",
+  "prix": 1
+},
+{
+  "id": 7,
+  "marque": "Fiat",
+  "nom": "500",
+  "description": "help",
+  "image": "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX2452622.jpg",
+  "prix": 1
 }]

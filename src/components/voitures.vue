@@ -3,7 +3,7 @@
     <br>
     <br>
     <br>
-    <v-navigation-drawer permanent fixed>
+    <v-navigation-drawer permanent fixed class="blue lighten-3" dark>
         <v-toolbar flat>
           <v-list>
             <v-list-tile>
@@ -50,8 +50,6 @@
         </v-card>
       </v-flex>
     </layout>
-    <br>
-    <router-link to="/">Click for hot stuff</router-link>
   </div>
 </template>
 

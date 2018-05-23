@@ -3,7 +3,6 @@
   <div class="contact">
   <br>  <br>
     <v-jumbotron color="grey lighten-2">
-        <router-link to="/">Home</router-link>
         <v-card-side>
         <v-layout>
      <v-flex xs12 sm6 offset-sm3>
@@ -13,7 +12,7 @@
          <v-card-title primary-title>
            <div>
              <h3 class="headline mb-50">Chef d'équipe</h3>
-             <div>Roberto truc </div>
+             <div>Roberto G. Cobeta</div>
            </div>
          </v-card-title>
        </v-card>

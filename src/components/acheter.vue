@@ -1,7 +1,7 @@
 <template>
   <div class="contact">
     <h1>Tu veux acheter un {{ marque }} {{ nom }} pour {{ prix }} francs.</h1>
-    <v-btn flat :to="{ name: 'produit', params: { id: id } }">Home</v-btn>
+    <v-btn flat @click="$router.go(-1)">Retourner</v-btn>
   </div>
 </template>
 
@@ -14,6 +14,7 @@ export default {
   data () {
     return {
       id: -1,
+      origine: '/idk',
       marque: 'marque',
       nom: 'nom',
       description: 'description',
@@ -23,6 +24,8 @@ export default {
   },
   created () {
     this.id = this.$route.params.id
+    this.origine = this.$route.params.origine
+
     this.marque = json[this.id].marque
     this.nom = json[this.id].nom
     this.description = json[this.id].description
