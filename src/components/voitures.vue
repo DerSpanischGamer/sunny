@@ -3,23 +3,23 @@
     <br>
     <br>
     <br>
-    <v-layout>
-    <v-container fluid px-0>
-      <v-flex xs6>
-        <v-radio-group  v-model="radio">
-          <v-radio v-for= "n in 3" :key="n" :label="'Hola'" :value="n">
+    <v-navigation-drawer permanent fixed>
+        <v-toolbar flat>
+          <v-list>
+            <v-list-tile>
+              <v-list-tile-title class="title">Trier par marque</v-list-tile-title>
+            </v-list-tile>
+          </v-list>
+        </v-toolbar>
+        <v-divider></v-divider>
+        <v-radio-group>
+          <v-radio v-model="checked" label='Toutes les voitures' @click="vraiselectione(false)"></v-radio>
+          <v-radio v-for= "n in marques" :key="n" :label="n" :value="n" @click="handler(true, n)">
           </v-radio>
         </v-radio-group>
-      </v-flex>
-      <v-flex xs6>
-        <v-card dark color="secondary">
-          <v-card-text class="px-0">6</v-card-text>
-        </v-card>
-      </v-flex>
-    </v-container>
-  </v-layout>
+      </v-navigation-drawer>
     <layout>
-      <v-flex xs12 sm6 offset-sm3 v-if="selectione === 'true'"> <!-- Cette partie s'execute si le client cherche une marque -->
+      <v-flex xs12 sm6 offset-sm3 v-if="selectione"> <!-- Cette partie s'execute si le client cherche une marque -->
         <v-card v-for="voiture in voitures" v-if="voiture.marque == marqueselec" :key="voiture.id">
           <v-card-media :src="voiture.image" height="200" ></v-card-media>
           <v-card-title primary-title >
@@ -34,7 +34,7 @@
           </v-card-actions>
         </v-card>
       </v-flex>
-      <v-flex xs12 sm6 offset-sm3 v-if="selectione === 'false'"> <!-- Cette partie s'execute si le client veut voir toutes les voitures -->
+      <v-flex xs12 sm6 offset-sm3 v-if="!selectione"> <!-- Cette partie s'execute si le client veut voir toutes les voitures -->
         <v-card v-for="voiture in voitures" :key="voiture.id">
           <v-card-media :src="voiture.image" height="200"></v-card-media>
           <v-card-title primary-title>
@@ -62,26 +62,43 @@ export default {
   name: 'voitures',
   data () {
     return {
-      selectione: 'false',
-      marqueselec: 'Ford'
+      selectione: false,
+      marqueselec: 'null',
+      radioGroup: 1
     }
   },
   created () {
     console.log('log')
-    this.hola()
   },
   computed: {
     voitures () {
       let voitures = json
       return voitures
+    },
+    marques () {
+      let marques = []
+      console.log('asdf')
+      for (var i = 0; i < json.length; i++) {
+        if (!marques.includes(json[i].marque)) {
+          marques.push(json[i].marque)
+        }
+      }
+      console.log(marques)
+      return marques
     }
   },
   methods: {
-    hola () {
-      console.log('hola')
-      for (var i = 0; i < json.length; i++) {
-        console.log(json[i].marque)
-      }
+    vraiselectione: function (arg) {
+      this.$data.selectione = arg
+    },
+    voitureselectione: function (arg) {
+      this.$data.marqueselec = arg
+    },
+    handler: function (arg1, arg2) {
+      console.log('je t aime')
+      console.log(arg1 + ' ' + arg2)
+      this.vraiselectione(arg1)
+      this.voitureselectione(arg2)
     }
   }
 }
