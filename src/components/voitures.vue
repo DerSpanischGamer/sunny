@@ -1,10 +1,13 @@
 <template>
   <div class="voitures">
+  </br>
+</br>
+</br>
     <layout>
       <v-flex xs12 sm6 offset-sm3 v-if="selectione === 'true'"> <!-- Cette partie s'execute si le client cherche une marque -->
         <v-card v-for="voiture in voitures" v-if="voiture.marque == marqueselec" :key="voiture.id">
-          <v-card-media :src="voiture.image" height="200"></v-card-media>
-          <v-card-title primary-title>
+          <v-card-media :src="voiture.image" height="200" ></v-card-media>
+          <v-card-title primary-title >
             <div>
               <h2 class="headline mb-0"> {{ voiture.nom }} </h2>
               <div> <h3> {{voiture.marque}} </h3> <br> {{ voiture.description }} </div>
@@ -45,7 +48,7 @@ export default {
   data () {
     return {
       selectione: 'false',
-      marqueselec: 'Ford'
+      marqueselec: 'Ford',
     }
   },
   computed: {

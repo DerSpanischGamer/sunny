@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <v-toolbar fixed scroll-off-screen>
+  <div id="app" class="black">
+    <v-toolbar fixed scroll-off-screen class= "blue">
       <v-toolbar-title>Sunny</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
