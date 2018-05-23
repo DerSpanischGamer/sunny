@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <v-carousel>
-      <v-carousel-item v-for="(image, i) in images" :src="image.image" :key="i" :to="{ name: 'produit', params: { id: image.id, origine: '/' } }"></v-carousel-item>
+      <v-carousel-item v-for="(image, i) in items" :src="image.image" :key="i" :to="{ name: 'produit', params: { id: image.id, origine: '/' } }"></v-carousel-item>
     </v-carousel>
   </div>
 </template>
@@ -15,7 +15,7 @@ export default {
   data () {
     return {
       msg: 'Sunny',
-      images: json
+      items: json
     }
   }
 }
