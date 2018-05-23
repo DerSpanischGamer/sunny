@@ -1,10 +1,43 @@
 <!-- en template il y a la code en html -->
 <template>
   <div class="contact">
-  </br>  </br>
+  <br>  <br>
     <v-jumbotron color="grey lighten-2">
+<<<<<<< HEAD
         <router-link to="/">Home</router-link>
 
+=======
+        <v-card-side>
+        <v-layout>
+     <v-flex xs12 sm6 offset-sm3>
+       <v-card>
+         <v-card-media src="\src\assets\logo.gif" height="100px">
+         </v-card-media>
+         <v-card-title primary-title>
+           <div>
+             <h3 class="headline mb-50">Chef d'équipe</h3>
+             <div>Roberto G. Cobeta</div>
+           </div>
+         </v-card-title>
+       </v-card>
+     </v-flex>
+   </v-layout>
+   <v-layout>
+<v-flex xs12 sm6 offset-sm3>
+  <v-card>
+    <v-card-media src="\src\assets\logo.gif" height="200px">
+    </v-card-media>
+    <v-card-title primary-title>
+      <div>
+        <h3 class="headline mb-4">Chef d'équipe</h3>
+        <div>Roberto truc </div>
+      </div>
+    </v-card-title>
+  </v-card>
+</v-flex>
+</v-layout>
+</v-card-side>
+>>>>>>> 709f38c13a84b96aa1f5c9fec33fedb52ef47320
       </v-jumbotron>
   </div>
 </template>
