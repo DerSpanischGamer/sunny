@@ -1,44 +1,38 @@
 <!-- en template il y a la code en html -->
 <template>
   <div class="contact">
-  <br>  <br>
-    <v-jumbotron color="grey lighten-2">
+  <br><br>
 <<<<<<< HEAD
         <router-link to="/">Home</router-link>
 
 =======
-        <v-card-side>
-        <v-layout>
-     <v-flex xs12 sm6 offset-sm3>
-       <v-card>
-         <v-card-media src="\src\assets\logo.gif" height="100px">
-         </v-card-media>
-         <v-card-title primary-title>
-           <div>
-             <h3 class="headline mb-50">Chef d'équipe</h3>
-             <div>Roberto G. Cobeta</div>
-           </div>
-         </v-card-title>
-       </v-card>
-     </v-flex>
-   </v-layout>
-   <v-layout>
-<v-flex xs12 sm6 offset-sm3>
-  <v-card>
-    <v-card-media src="\src\assets\logo.gif" height="200px">
-    </v-card-media>
-    <v-card-title primary-title>
-      <div>
-        <h3 class="headline mb-4">Chef d'équipe</h3>
-        <div>Roberto truc </div>
-      </div>
-    </v-card-title>
-  </v-card>
-</v-flex>
-</v-layout>
-</v-card-side>
->>>>>>> 709f38c13a84b96aa1f5c9fec33fedb52ef47320
-      </v-jumbotron>
+<h1> CONTACTS</h1><br>
+<v-layout row wrap>
+   <v-flex xs12 sm4 offset-sm1>
+     <v-card>
+       <v-card-media height="200px">
+       </v-card-media>
+       <v-card-title primary-title>
+         <div>
+           <h3 class="headline mb-0">Roberto G. Cobeta</h3>
+           <div>Chef d'équipe</div>
+         </div>
+       </v-card-title>
+     </v-card>
+   </v-flex>
+     <v-flex xs12 sm4 offset-sm2>
+     <v-card>
+       <v-card-media src="src/assets/nico.jpg" height="200px">
+       </v-card-media>
+       <v-card-title primary-title>
+         <div>
+           <h3 class="headline mb-0">Nicoly Santos</h3>
+           <div>Assistant général</div>
+         </div>
+       </v-card-title>
+     </v-card>
+   </v-flex>
+ </v-layout>
   </div>
 </template>
 
@@ -50,18 +44,8 @@
 <style scoped>
 h1{
   font-style: normal;
-  margin-top: 3em;
-  color: black;
-  margin-left: 10em;
- margin-right: 10em;
- font-weight: bold;
-}
-h2{
-  font-style: normal;
-  margin-top: 0em;
-  color: black;
-  margin-left: 0em;
- margin-right: 40em;
+  margin-top: 1.5em;
+  color: blue;
  font-weight: bold;
 }
 

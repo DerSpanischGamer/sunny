@@ -21,7 +21,7 @@
     <layout>
       <v-flex xs12 sm6 offset-sm3 v-if="selectione"> <!-- Cette partie s'execute si le client cherche une marque -->
         <v-card v-for="voiture in voitures" v-if="voiture.marque == marqueselec" :key="voiture.id">
-          <v-card-media :src="voiture.image" height="200" ></v-card-media>
+          <v-card-media :src="voiture.image" height="500" ></v-card-media>
           <v-card-title primary-title >
             <div>
               <h2 class="headline mb-0"> {{ voiture.nom }} </h2>
@@ -36,7 +36,7 @@
       </v-flex>
       <v-flex xs12 sm6 offset-sm3 v-if="!selectione"> <!-- Cette partie s'execute si le client veut voir toutes les voitures -->
         <v-card v-for="voiture in voitures" :key="voiture.id">
-          <v-card-media :src="voiture.image" height="200"></v-card-media>
+          <v-card-media :src="voiture.image" height="400"></v-card-media>
           <v-card-title primary-title>
             <div>
               <h2 class="headline mb-0"> {{ voiture.nom }} </h2>

@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <v-carousel>
+    <h1>{{ msg }}</h1> <br>
+    <v-carousel >
       <v-carousel-item v-for="(image, i) in items" :src="image.image" :key="i" :to="{ name: 'produit', params: { id: image.id, origine: '/' } }"></v-carousel-item>
     </v-carousel>
   </div>
@@ -23,7 +23,9 @@ export default {
 
 <style scoped>
 h1, h2 {
-  font-weight: normal;
+  font-weight: Arial;
+  height: 500
+
 }
 ul {
   list-style-type: none;

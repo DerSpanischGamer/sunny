@@ -3,7 +3,7 @@
     <layout>
       <v-flex xs12 sm6 offset-sm3> <!-- Cette partie s'execute si le client cherche une marque -->
         <v-card>
-          <v-card-media :src="image" height="200" ></v-card-media>
+          <v-card-media :src="image" height="500" ></v-card-media>
           <v-card-title primary-title >
             <div>
               <h2 class="headline mb-0"> {{ nom }} </h2>
