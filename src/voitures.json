@@ -4,7 +4,8 @@
   "nom": "Ibiza",
   "description": "LA MEILLEURE VOITURE DU MONDE.",
   "image": "https://a.ccdn.es/cnet/2018/02/14/34271069/134151098_g.jpg",
-  "prix": 1
+  "prix": 1,
+  "achat":"Pour à peine 200 francs par mois"
 },
 {
   "id": 1,
@@ -12,6 +13,7 @@
   "nom": "Fiesta",
   "description": "Magnifique voiture noire, parfait pour aller shopping.",
   "image": "https://s1.cdn.autoevolution.com/images/gallery/FORDFiesta3Doors-2769_2.jpg",
+  "image_2":"foto d'interieur?",
   "prix": 1
 },
 {
