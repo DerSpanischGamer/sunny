@@ -7,14 +7,6 @@
         <v-btn flat to="/">Home</v-btn>
         <v-btn flat to="/voitures">Voitures</v-btn>
         <v-btn flat to="/contact">Contact</v-btn>
-        <v-menu>
-          <v-btn slot="activator">Marques</v-btn>
-          <v-list subheader>
-            <v-list-tile v-for="marque in marques" :key="marque" @click="marqueselec = marque">
-              <v-list-tile-title>{{ marque }}</v-list-tile-title>
-            </v-list-tile>
-          </v-list>
-        </v-menu>
       </v-toolbar-items>
     </v-toolbar>
     <router-view/>
@@ -22,21 +14,8 @@
 </template>
 
 <script>
-import json from './voitures.json'
-
 export default {
-  name: 'App',
-  computed: {
-    marques () {
-      let marques = []
-      for (var i = 0; i < json.length; i++) {
-        if (!marques.includes(json[i].marque)) {
-          marques.push(json[i].marque)
-        }
-      }
-      return marques
-    }
-  }
+  name: 'App'
 }
 </script>
 
