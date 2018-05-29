@@ -2,12 +2,9 @@
 <template>
   <div class="contact">
   <br><br>
-<<<<<<< HEAD
-        <router-link to="/">Home</router-link>
-
-=======
-<h1> CONTACTS</h1><br>
-<v-layout row wrap>
+  <router-link to="/">Home</router-link>
+  <h1> CONTACTS</h1><br>
+  <v-layout row wrap>
    <v-flex xs12 sm4 offset-sm1>
      <v-card>
        <v-card-media height="200px">

@@ -65,9 +65,6 @@ export default {
       radioGroup: 1
     }
   },
-  created () {
-    console.log('log')
-  },
   computed: {
     voitures () {
       let voitures = json
@@ -93,7 +90,6 @@ export default {
       this.$data.marqueselec = arg
     },
     handler: function (arg1, arg2) {
-      console.log('je t aime')
       console.log(arg1 + ' ' + arg2)
       this.vraiselectione(arg1)
       this.voitureselectione(arg2)
