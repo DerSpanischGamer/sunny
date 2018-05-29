@@ -6,7 +6,7 @@
     <h1> CONTACTS</h1><br>
     <v-layout row wrap>
      <v-flex xs12 sm4 offset-sm1>
-       <v-card >
+       <v-card>
          <img src="../assets/rob.jpg" height=" 300px">
          <v-card-title primary-title>
            <div>
@@ -33,8 +33,15 @@
 </template>
 
 <script>
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+h1 {
+  font-style: normal;
+  margin-top: 1.5em;
+  color: blue;
+ font-weight: bold;
+}
 </style>
