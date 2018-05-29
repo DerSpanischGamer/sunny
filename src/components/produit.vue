@@ -11,7 +11,7 @@
             </div>
           </v-card-title>
           <v-card-actions>
-            <v-btn flat color="orange" :to="{ name: 'produit', params: { id: id, origine: '/voitures' } }">Regarder</v-btn>
+            <v-btn flat color="orange" :to="origine">Retourner</v-btn>
             <v-btn flat color="orange" :to="{ name: 'acheter', params: { id: id } }">Acheter</v-btn>
           </v-card-actions>
         </v-card>
