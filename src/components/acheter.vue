@@ -6,9 +6,9 @@
     <layout>
       <v-flex xs12 sm6 offset-sm3>
         <v-card>
-      <v-carousel>
-        <v-carousel-item v-for="(image, i) in voitures" :src="image.image" :key="i" :to="{ name: 'produit', params: { id: image.id, origine: '/' } }"></v-carousel-item>
-      </v-carousel>
+          <v-carousel>
+              <v-carousel-item v-for="(item,i) in items" :src="item.src" :key="i"></v-carousel-item>
+            </v-carousel>
           <v-card-title primary-title >
             <div>
               <h2 class="headline mb-0"> {{ nom }} </h2>

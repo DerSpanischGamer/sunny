@@ -4,11 +4,7 @@
   "nom": "Ibiza",
   "description": "LA MEILLEURE VOITURE DU MONDE.",
   "image": "https://a.ccdn.es/cnet/2018/02/14/34271069/134151098_g.jpg",
-<<<<<<< HEAD
-  "prix": 200
-=======
   "prix": 16.000
->>>>>>> 4f70cbc0f63fa09d5c9f591d66fa272259dd38be
 },
 {
   "id": 1,
@@ -17,11 +13,7 @@
   "description": "Magnifique voiture noire, parfait pour aller shopping.",
   "image": "https://s1.cdn.autoevolution.com/images/gallery/FORDFiesta3Doors-2769_2.jpg",
   "image_2":"foto d'interieur?",
-<<<<<<< HEAD
-  "prix": 400
-=======
   "prix": 17.000
->>>>>>> 4f70cbc0f63fa09d5c9f591d66fa272259dd38be
 },
 {
   "id": 2,
@@ -29,11 +21,7 @@
   "nom": "XC90",
   "description": "Belle voiture bleu qui fonctionne bien dans tous les terrains.",
   "image": "https://assets.volvocars.com/es/~/media/shared-assets/master/images/pages/my19/xc90-my19/pdp-landning/vcc08413_4x3.jpg",
-<<<<<<< HEAD
-  "prix": 500
-=======
   "prix": 18.000
->>>>>>> 4f70cbc0f63fa09d5c9f591d66fa272259dd38be
 },
 {
   "id": 3,
@@ -177,6 +165,7 @@
   "nom": "Delta",
   "description": "help",
   "image": "https://www.tmcollectibles.com/media/catalog/product/cache/5/image/9df78eab33525d08d6e5fb8d27136e95/l/a/lancia-delta-integrale-evolution-2-blue-lagos-07-web.jpg",
+  "image_2": "",
   "prix": 1
 },
 {
@@ -185,6 +174,7 @@
   "nom": "Fulvia",
   "description": "help",
   "image": "https://www.rally24.fr/res/img/products/39573/1/1/lancia-fulvia-hf-quattro.jpeg",
+  "image_2": "http://aws-cf.caradisiac.com/prod/mesimages/576097/Interieur02.jpg",
   "prix": 1
 },
 {
@@ -193,6 +183,7 @@
   "nom": "Musa",
   "description": "help",
   "image": "https://images.caradisiac.com/logos/5/8/3/7/135837/S7-Lancia-Musa-40441.jpg",
+  "image_2": "https://www.larevueautomobile.com/images/Lancia/Musa/Interieur/Lancia_Musa_021.jpg",
   "prix": 1
 }
 ]
