@@ -11,8 +11,10 @@
               <h2 class="headline mb-0"> {{ nom }} </h2>
               <div> <h3> {{marque}} </h3> <br> {{ description }} <br> {{ achat }} </div>
             </div>
+            <img src="../assets/payments.png" height="200">
           </v-card-title>
           <v-btn flat @click="$router.go(-1)">Retourner</v-btn>
+          <v-btn flat>Payer</v-btn>
         </v-card>
       </v-flex>
     </layout>
