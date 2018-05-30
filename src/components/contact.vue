@@ -1,13 +1,11 @@
 <template>
   <div class="contact">
-    <router-link to="/">Home</router-link>
     <br><br>
-    <router-link to="/">Home</router-link>
     <h1> CONTACTS</h1><br>
     <v-layout row wrap>
      <v-flex xs12 sm4 offset-sm1>
        <v-card>
-         <img src="../assets/rob.jpg" height=" 300px">
+         <img src="../assets/rob.jpg" height="300px">
          <v-card-title primary-title>
            <div>
              <h3 class="headline mb-0">Roberto G. Cobeta</h3>
