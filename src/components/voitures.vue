@@ -4,20 +4,20 @@
     <br>
     <br>
     <v-navigation-drawer permanent fixed class="blue lighten-3" dark>
-        <v-toolbar flat>
-          <v-list>
-            <v-list-tile>
-              <v-list-tile-title class="title">Trier par marque</v-list-tile-title>
-            </v-list-tile>
-          </v-list>
-        </v-toolbar>
-        <v-divider></v-divider>
-        <v-radio-group>
-          <v-radio v-model="checked" label='Toutes les voitures' @click="vraiselectione(false)"></v-radio>
+      <v-toolbar flat>
+        <v-list>
+          <v-list-tile>
+            <v-list-tile-title class="title">Rechercher des voitures</v-list-tile-title>
+          </v-list-tile>
+        </v-list>
+      </v-toolbar>
+      <v-divider></v-divider>
+      <v-radio-group>
+        <v-radio v-model="checked" label='Toutes les voitures' @click="vraiselectione(false)"></v-radio>
           <v-radio v-for= "n in marques" :key="n" :label="n" :value="n" @click="handler(true, n)">
-          </v-radio>
-        </v-radio-group>
-      </v-navigation-drawer>
+        </v-radio>
+      </v-radio-group>
+    </v-navigation-drawer>
     <layout>
       <v-flex xs12 sm6 offset-sm3 v-if="selectione"> <!-- Cette partie s'execute si le client cherche une marque -->
         <v-card v-for="voiture in voitures" v-if="voiture.marque == marqueselec" :key="voiture.id">
