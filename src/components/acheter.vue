@@ -1,16 +1,14 @@
 <template>
   <div class="contact">
-    <br>    <br>
-    <h1>Tu veux acheter un {{ marque }} {{ nom }} ?</h1>
+    <br>    <br><br><br><br>
+    <h1>Tu veux acheter un {{ marque }} {{ nom }} pour {{ prix }} ?</h1>
     <v-btn flat @click="$router.go(-1)">Retourner</v-btn>
     <layout>
       <v-flex xs12 sm6 offset-sm3>
         <v-card>
-       <v-card-actions>
-         <v-select :items="items" v-model="size" label="Quantité et prix"></v-select>
-         <v-spacer></v-spacer>
-       </v-card-actions>
-        <v-card-media :src="image" height="500" ></v-card-media>
+      <v-carousel>
+        <v-carousel-item v-for="(image, i) in voitures" :src="image.image" :key="i" :to="{ name: 'produit', params: { id: image.id, origine: '/' } }"></v-carousel-item>
+      </v-carousel>
           <v-card-title primary-title >
             <div>
               <h2 class="headline mb-0"> {{ nom }} </h2>

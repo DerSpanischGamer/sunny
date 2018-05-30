@@ -4,8 +4,7 @@
   "nom": "Ibiza",
   "description": "LA MEILLEURE VOITURE DU MONDE.",
   "image": "https://a.ccdn.es/cnet/2018/02/14/34271069/134151098_g.jpg",
-  "prix": 1,
-  "achat":"Pour à peine 200 francs par mois"
+  "prix": 200
 },
 {
   "id": 1,
@@ -14,7 +13,7 @@
   "description": "Magnifique voiture noire, parfait pour aller shopping.",
   "image": "https://s1.cdn.autoevolution.com/images/gallery/FORDFiesta3Doors-2769_2.jpg",
   "image_2":"foto d'interieur?",
-  "prix": 1
+  "prix": 400
 },
 {
   "id": 2,
@@ -22,7 +21,7 @@
   "nom": "XC90",
   "description": "Belle voiture bleu qui fonctionne bien dans tous les terrains.",
   "image": "https://assets.volvocars.com/es/~/media/shared-assets/master/images/pages/my19/xc90-my19/pdp-landning/vcc08413_4x3.jpg",
-  "prix": 1
+  "prix": 500
 },
 {
   "id": 3,
