@@ -1,13 +1,13 @@
 <template>
   <div class="contact">
     <br>    <br>
-    <h1>Tu veux acheter un {{ marque }} {{ nom }} pour {{ prix }} francs.</h1>
+    <h1>Tu veux acheter un {{ marque }} {{ nom }} ?</h1>
     <v-btn flat @click="$router.go(-1)">Retourner</v-btn>
     <layout>
       <v-flex xs12 sm6 offset-sm3>
         <v-card>
        <v-card-actions>
-         <v-select :items="items" v-model="size" label="Size"></v-select>
+         <v-select :items="items" v-model="size" label="Quantité et prix"></v-select>
          <v-spacer></v-spacer>
        </v-card-actions>
         <v-card-media :src="image" height="500" ></v-card-media>
