@@ -40,6 +40,7 @@ export default {
         }
 
         if (bien) {
+          chifres.push(ran)
           voitures.push(json[ran])
         } else {
           choisirChifre()
@@ -60,7 +61,6 @@ export default {
 h1, h2 {
   font-weight: Arial;
   height: 500
-
 }
 ul {
   list-style-type: none;
