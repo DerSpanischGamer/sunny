@@ -16,7 +16,7 @@
      </v-flex>
        <v-flex xs12 sm4 offset-sm2>
        <v-card>
-         <img src="../assets/nico.jpg" height="300px">
+         <img src="../assets/nicoly.jpeg" height="300px">
          <v-card-title primary-title>
            <div>
              <h3 class="headline mb-0">Nicoly Santos</h3>

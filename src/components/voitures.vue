@@ -72,13 +72,13 @@ export default {
     },
     marques () {
       let marques = []
-      console.log('asdf')
+
       for (var i = 0; i < json.length; i++) {
         if (!marques.includes(json[i].marque)) {
           marques.push(json[i].marque)
         }
       }
-      console.log(marques)
+
       return marques
     }
   },
@@ -90,7 +90,6 @@ export default {
       this.$data.marqueselec = arg
     },
     handler: function (arg1, arg2) {
-      console.log(arg1 + ' ' + arg2)
       this.vraiselectione(arg1)
       this.voitureselectione(arg2)
     }
