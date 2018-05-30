@@ -4,7 +4,11 @@
   "nom": "Ibiza",
   "description": "LA MEILLEURE VOITURE DU MONDE.",
   "image": "https://a.ccdn.es/cnet/2018/02/14/34271069/134151098_g.jpg",
+<<<<<<< HEAD
   "prix": 200
+=======
+  "prix": 16.000
+>>>>>>> 4f70cbc0f63fa09d5c9f591d66fa272259dd38be
 },
 {
   "id": 1,
@@ -13,7 +17,11 @@
   "description": "Magnifique voiture noire, parfait pour aller shopping.",
   "image": "https://s1.cdn.autoevolution.com/images/gallery/FORDFiesta3Doors-2769_2.jpg",
   "image_2":"foto d'interieur?",
+<<<<<<< HEAD
   "prix": 400
+=======
+  "prix": 17.000
+>>>>>>> 4f70cbc0f63fa09d5c9f591d66fa272259dd38be
 },
 {
   "id": 2,
@@ -21,7 +29,11 @@
   "nom": "XC90",
   "description": "Belle voiture bleu qui fonctionne bien dans tous les terrains.",
   "image": "https://assets.volvocars.com/es/~/media/shared-assets/master/images/pages/my19/xc90-my19/pdp-landning/vcc08413_4x3.jpg",
+<<<<<<< HEAD
   "prix": 500
+=======
+  "prix": 18.000
+>>>>>>> 4f70cbc0f63fa09d5c9f591d66fa272259dd38be
 },
 {
   "id": 3,
@@ -29,7 +41,8 @@
   "nom": "Libra",
   "description": "Une chouette voiture blue familiare.",
   "image": "http://aws-cf.caradisiac.com/prod/mesimages/355095/1000432.jpg",
-  "prix": 1
+  "image_2": "",
+  "prix": 17.000
 },
 {
   "id": 4,
@@ -37,7 +50,8 @@
   "nom": "Grand Caravan",
   "description": "Minifourgonette choue",
   "image": "https://medias.fcacanada.ca//sites/brand/dodge/images/2018-dodge-gc-nav_19e56b45d7fa8333882055521164ed64-retina.jpg",
-  "prix": 1
+  "image_2": "",
+  "prix": 20.000
 },
 {
   "id": 5,
@@ -45,39 +59,44 @@
   "nom": "Corolla",
   "description": "Toujours une bonne voiture I guess",
   "image": "http://storage.journaldemontreal.com/v1/dynamic_resize/sws_path/jdx-prod-images/dc103a97-492c-4bb7-85af-f8cdcae9b565_ORIGINAL.jpg?quality=80&version=7&size=968x",
-  "prix": 1
+  "image_2": "",
+  "prix": 19.000
 },
 {
   "id": 6,
   "marque": "Volkswagen",
   "nom": "Beetle",
-  "description": "Giulia m'a obligé à la mettre.",
+  "description": "Petite voiture jaune parfaite pour des road-trips",
   "image": "http://1.bp.blogspot.com/-kob4SCmlu2A/UAn9zuxYk0I/AAAAAAAADyg/--vXokLNPs8/s1600/beetle1.jpg",
-  "prix": 1
+  "image_2": "",
+  "prix": 14.000
 },
 {
   "id": 7,
   "marque": "Fiat",
   "nom": "500",
-  "description": "help",
+  "description": "Parfaite pour un tour de l'Italiaaa",
   "image": "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX2452622.jpg",
-  "prix": 1
+  "image_2": "",
+  "prix": 14.000
 },
 {
   "id": 8,
   "marque": "Toyota",
   "nom": "Yaris sedan",
-  "description": "wtf",
+  "description": "Une voiture très familiale idéale pour tous les jours ",
   "image": "https://www.toyota.com/imgix/responsive/images/mlp/colorizer/2018/yaris/040/1.png?q=85&fm=jpg&w=1024&fit=max&cs=strip&bg=fff",
-  "prix": 1
+  "image_2": "",
+  "prix": 17.000
 },
 {
   "id": 9,
   "marque": "Toyota",
   "nom": "Prius",
-  "description": "yep",
+  "description": "Une voiture tr`s chic et idéale pour tous les jours",
   "image": "http://www.avem.fr/img/hybrid/prius_4.jpg",
-  "prix": 1
+  "image_2": "",
+  "prix": 17.500
 },
 {
   "id": 10,
@@ -85,13 +104,14 @@
   "nom": "488",
   "description": "help",
   "image": "https://i.ytimg.com/vi/ho48tHTs3Bo/maxresdefault.jpg",
+  "image_2": "",
   "prix": 1
 },
 {
   "id": 11,
   "marque": "Ferrari",
   "nom": "F12",
-  "description": "help",
+  "description": "Idéal pour une course de voiture aussi inutile que Nicoly",
   "image": "https://www.autowereld.nl/I196949176/1280x0/ferrari-f12-6-3-berlinetta-6-3-berlinetta.jpg",
   "prix": 1
 },
@@ -115,7 +135,7 @@
   "id": 14,
   "marque": "Volkswagen",
   "nom": "van",
-  "description": "help",
+  "description": "Parfait pour les hippies",
   "image": "https://www.kimballstock.com/pix/AUT/22/AUT-22-RK2806-01P.JPG",
   "prix": 1
 },
@@ -123,7 +143,7 @@
   "id": 15,
   "marque": "Chevrolet",
   "nom": "Impala",
-  "description": "MEILLEURE VOITURE PTNN, JE VEUX UNE SA RACEEEE",
+  "description": "Le coffre est assez grand pour empiler les valises",
   "image": "http://jdn-congres.info/wp-content/uploads/2018/04/chevrolet-impala-1967-chevrolet-impala-1967-goda-628x275.jpg",
   "prix": 1
 },
@@ -131,7 +151,7 @@
   "id": 16,
   "marque": "Chevrolet",
   "nom": "Camaro",
-  "description": "help",
+  "description": "Le remplacement pas cher d'une Ferrari",
   "image": "https://images.caradisiac.com/logos-ref/modele/modele--chevrolet-camaro-5/S0-modele--chevrolet-camaro-5.jpg",
   "prix": 1
 },
@@ -139,7 +159,7 @@
   "id": 17,
   "marque": "Chevrolet",
   "nom": "Tahoe",
-  "description": "help",
+  "description": "Assez grand pour remplacer un lit...quand t'es renvoyé de la maison par ta femme",
   "image": "https://pronedra.ru/upkeep/uploads/2018/02/af796e5f4060bf67eec3f0d15c093d30.jpg",
   "prix": 1
 },
