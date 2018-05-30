@@ -1,9 +1,11 @@
 <template>
   <div class="produit">
     <layout>
-      <v-flex xs12 sm6 offset-sm3> <!-- Cette partie s'execute si le client cherche une marque -->
+      <v-flex xs12 sm6 offset-sm3>
         <v-card>
-          <v-card-media :src="image" height="500" ></v-card-media>
+          <v-carousel>
+            <v-carousel-item v-for="(item,i) in images" :src="item" :key="i"></v-carousel-item>
+          </v-carousel>
           <v-card-title primary-title >
             <div>
               <h2 class="headline mb-0"> {{ nom }} </h2>
@@ -12,7 +14,7 @@
           </v-card-title>
           <v-card-actions>
             <v-btn flat color="orange" :to="origine">Retourner</v-btn>
-            <v-btn flat color="orange" :to="{ name: 'acheter', params: { id: id } }">Acheter</v-btn>
+            <v-btn flat color="orange" :to="{ name: 'acheter', params: { id: id } }">Acheter {{ prix }} CHF</v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>
@@ -33,7 +35,8 @@ export default {
       marque: 'marque',
       nom: 'nom',
       description: 'description',
-      image: 'https://www.anipedia.net/imagenes/caracteristicas-generales-de-los-gatos.jpg'
+      image: 'https://www.anipedia.net/imagenes/caracteristicas-generales-de-los-gatos.jpg',
+      prix: 1
     }
   },
   created () {
@@ -44,10 +47,25 @@ export default {
     this.nom = json[this.id].nom
     this.description = json[this.id].description
     this.image = json[this.id].image
+    this.prix = json[this.id].prix
   },
   methods: {
     navigate () {
       router.go(-1)
+    }
+  },
+  computed: {
+    images () {
+      let images = []
+
+      images.push(json[this.id].image)
+      images.push(json[this.id].image_2)
+
+      for (let i = 0; i < images.length; i++) {
+        console.log(images[i])
+      }
+
+      return images
     }
   }
 }

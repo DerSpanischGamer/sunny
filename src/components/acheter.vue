@@ -1,14 +1,12 @@
 <template>
   <div class="acheter">
-    <br>    <br><br><br><br>
+    <br><br><br><br><br>
     <h1>Tu veux acheter un {{ marque }} {{ nom }} pour {{ prix }} ?</h1>
     <v-btn flat @click="$router.go(-1)">Retourner</v-btn>
     <layout>
       <v-flex xs12 sm6 offset-sm3>
         <v-card>
-          <v-carousel>
-              <v-carousel-item v-for="(item,i) in images" :src="item" :key="i"></v-carousel-item>
-            </v-carousel>
+          <v-card-media :src="image" height="500" ></v-card-media>
           <v-card-title primary-title >
             <div>
               <h2 class="headline mb-0"> {{ nom }} </h2>
@@ -50,20 +48,6 @@ export default {
   methods: {
     navigate () {
       router.go(-1)
-    }
-  },
-  computed: {
-    images () {
-      let images = []
-
-      images.push(json[this.id].image)
-      images.push(json[this.id].image_2)
-
-      for (let i = 0; i < images.length; i++) {
-        console.log(images[i])
-      }
-
-      return images
     }
   }
 }
