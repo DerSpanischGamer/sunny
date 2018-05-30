@@ -3,8 +3,8 @@
     <br><br>
     <h1> CONTACTS</h1><br>
     <v-layout row wrap>
-     <v-flex xs12 sm4 offset-sm1>
-       <v-card>
+     <v-flex xs12 sm5 offset-sm0>
+       <v-card >
          <img src="../assets/rob.jpg" height="300px">
          <v-card-title primary-title>
            <div>
