@@ -3,7 +3,7 @@
     <layout>
       <v-flex xs12 sm6 offset-sm3>
         <v-card>
-          <v-carousel style="height: 100%" hide-controls>
+          <v-carousel >
             <v-carousel-item v-for="(item,i) in images" :src="item" :key="i" ></v-carousel-item>
           </v-carousel>
           <v-card-title primary-title >
