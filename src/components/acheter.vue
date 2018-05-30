@@ -2,7 +2,6 @@
   <div class="acheter">
     <br><br><br><br><br>
     <h1>Tu veux acheter un {{ marque }} {{ nom }} pour {{ prix }} ?</h1>
-    <v-btn flat @click="$router.go(-1)">Retourner</v-btn>
     <layout>
       <v-flex xs12 sm6 offset-sm3>
         <v-card>
@@ -13,6 +12,7 @@
               <div> <h3> {{marque}} </h3> <br> {{ description }} <br> {{ achat }} </div>
             </div>
           </v-card-title>
+          <v-btn flat @click="$router.go(-1)">Retourner</v-btn>
         </v-card>
       </v-flex>
     </layout>
@@ -43,6 +43,7 @@ export default {
     this.marque = json[this.id].marque
     this.nom = json[this.id].nom
     this.description = json[this.id].description
+    this.image = json[this.id].image
     this.prix = json[this.id].prix
   },
   methods: {
