@@ -1,8 +1,10 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>{{ msg }}</h1> <br>
+    <h2>Bienvenue au Sunny! Le site de vente de voiture le plus spécialisé d'internet. <br><img src="../assets/car.png" height="100"> Ici vous trouverez en un clignotement d'oeil la voiture de vos rêves.</h2>
+    <br> <br>
     <v-carousel>
-      <v-carousel-item v-for="(image, i) in items" :src="image.image" :key="i" :to="{ name: 'produit', params: { id: image.id, origine: '/' } }"></v-carousel-item>
+      <v-carousel-item v-for="(image, i) in voitures" :src="image.image" :key="i" :to="{ name: 'produit', params: { id: image.id, origine: '/' } }"></v-carousel-item>
     </v-carousel>
   </div>
 </template>
@@ -17,13 +19,49 @@ export default {
       msg: 'Sunny',
       items: json
     }
+  },
+  computed: {
+    voitures () {
+      let voitures = []
+      let chifres = []
+
+      let max = 4
+
+      function choisirChifre () {
+        let ran = Math.floor(Math.random() * json.length)
+
+        let bien = function toutbien (arg) {
+          let temp = true
+          for (let i = 0; i < chifres.length; i++) {
+            if (arg === chifres[i]) {
+              temp = false
+            }
+          }
+          return temp
+        }
+
+        if (bien) {
+          voitures.push(json[ran])
+        } else {
+          choisirChifre()
+        }
+      }
+
+      for (let i = 0; i < max; i++) {
+        choisirChifre()
+      }
+
+      return voitures
+    }
   }
 }
 </script>
 
 <style scoped>
 h1, h2 {
-  font-weight: normal;
+  font-weight: Arial;
+  height: 500
+
 }
 ul {
   list-style-type: none;

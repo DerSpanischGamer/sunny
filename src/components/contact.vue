@@ -1,39 +1,32 @@
-<!-- en template il y a la code en html -->
 <template>
   <div class="contact">
-  <br>  <br>
-    <v-jumbotron color="grey lighten-2">
-        <v-card-side>
-        <v-layout>
-     <v-flex xs12 sm6 offset-sm3>
+    <br><br>
+    <h1> CONTACTS</h1><br>
+    <v-layout row wrap>
+     <v-flex xs12 sm4 offset-sm1>
        <v-card>
-         <v-card-media src="\src\assets\logo.gif" height="100px">
-         </v-card-media>
+         <img src="../assets/rob.jpg" height="300px">
          <v-card-title primary-title>
            <div>
-             <h3 class="headline mb-50">Chef d'équipe</h3>
-             <div>Roberto G. Cobeta</div>
+             <h3 class="headline mb-0">Roberto G. Cobeta</h3>
+             <div>Chef d'équipe</div>
+           </div>
+         </v-card-title>
+       </v-card>
+     </v-flex>
+       <v-flex xs12 sm4 offset-sm2>
+       <v-card>
+         <img src="../assets/nico.jpg" height="300px">
+         <v-card-title primary-title>
+           <div>
+             <h3 class="headline mb-0">Nicoly Santos</h3>
+             <div>Assistant général</div>
            </div>
          </v-card-title>
        </v-card>
      </v-flex>
    </v-layout>
-   <v-layout>
-<v-flex xs12 sm6 offset-sm3>
-  <v-card>
-    <v-card-media src="\src\assets\logo.gif" height="200px">
-    </v-card-media>
-    <v-card-title primary-title>
-      <div>
-        <h3 class="headline mb-4">Chef d'équipe</h3>
-        <div>Roberto truc </div>
-      </div>
-    </v-card-title>
-  </v-card>
-</v-flex>
-</v-layout>
-</v-card-side>
-      </v-jumbotron>
+
   </div>
 </template>
 
@@ -43,21 +36,10 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1{
+h1 {
   font-style: normal;
-  margin-top: 3em;
-  color: black;
-  margin-left: 10em;
- margin-right: 10em;
+  margin-top: 1.5em;
+  color: blue;
  font-weight: bold;
 }
-h2{
-  font-style: normal;
-  margin-top: 0em;
-  color: black;
-  margin-left: 0em;
- margin-right: 40em;
- font-weight: bold;
-}
-
 </style>
